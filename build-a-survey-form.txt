@@ -1,0 +1,187 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fun Survey</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <main>
+    <form id="survey-form" action="/url" method="post">
+      <fieldset>
+        <h1 id="title">Fun Survey</h1>
+        <p id="description">Do this fun survey!</p>
+      </fieldset>
+      <fieldset>
+        <h2>Part 1: About You</h2>
+        <label for="name" name="name" id="name-label">Put a name here: <input id="name" type="text"  required placeholder="harold"></label>
+        <label id="email-label" for="email" name="email">Put an email here: <input id="email" type="email" placeholder="harold@harold.com" required></label>
+        <label id="number-label" for="number">Put a number here: <input id="number" type="number" placeholder="0" min=69 max=69 required></label>
+        <label> Put the best colour here:
+          <select onchange="this.className=this.options[this.selectedIndex].className"
+    class="placetext" id="dropdown" name="dropdown">
+            <option class="placetext" value="">select one</option>
+            <option class="normtext" value=1>Purple</option>
+            <option class="normtext" value=2>Pink</option>
+            <option class="normtext" value=3>Blue</option>
+            <option class="normtext" value=4>Navy</option>
+            <option class="normtext" value=5>Black</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <h2>Part 2: Sleepy?</h2>
+        <label><input type="radio" checked name="sleep" id="eep" value="eep">Eepy Sleepy </label>
+        <label><input type="radio" name="sleep" id="honk" value="honk">Honk Shooo</label>
+        <label class="gapbelow"><input type="radio" name="sleep" id="mimi" value="mimi">Mimimimi</label>
+      </fieldset>
+      <fieldset>
+        <h2>Part 3: Previous tech experience?</h2>
+        <label><input type="checkbox" id="fs" value="fs">Followspot</label>
+        <label><input type="checkbox" id="sm" value="sm">Stage Manager</label>
+        <label><input type="checkbox" id="lx" value="lx">Lights</label>
+      </fieldset>
+      <fieldset>
+        <h2>Feedback:</h2>
+        <label><textarea rows="4" col="30"></textarea></label>
+        <button type="submit" id="submit" class="submit">Submit</button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  font-family: Poppins;
+  font-size: 25px;
+  background-image: url(https://c.wallhere.com/photos/b0/e9/alone_stars_purple_background-1964895.jpg!d);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #CCCCCC;
+  padding-top: 20px;
+  width: 100%;
+  height: 100vh;  
+  margin-bottom: 0
+}
+
+form{
+  min-width: 40px;
+  max-width: 1000px;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  border: 3px double white;
+  background-color: #54569EC2;
+
+}
+
+fieldset{
+  border: 1px dotted white;
+  border-top: 0;
+  border-right:0;
+  border-left:0;
+}
+
+h1,p,h2{
+  text-align: center;
+}
+
+h1{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+}
+
+h2{
+  margin: 10 0 15 0;
+}
+
+label{
+  display: block;
+  margin: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom:10px;
+  text-align: center;
+}
+
+input[type="text"],input[type="number"],input[type="email"],textarea, select{
+  font-size:25px;
+  width:50%;
+  margin: auto;
+  background-color: #3f417566;
+  color:#CCCCCC;
+  display: block;
+  text-align: center;
+  border: 2px dotted white;
+}
+
+input[type="text"]:hover,input[type="number"]:hover,input[type="email"]:hover,textarea:hover, select:hover{
+  border-style: dashed;
+}
+
+
+input[type="checkbox"],input[type="radio"]{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+select{
+  color:#CCCCCC;
+}
+
+select option[value=""]{
+  color:#CCCCCC;
+}
+
+
+textarea{
+  width:80%;
+  border: 2px dotted white;
+  font-size: 15px;
+}
+
+input[type="text"]:focus,input[type="number"]:focus,input[type="email"]:focus,textarea:focus, select:focus{
+  border: 3px solid white;
+  outline: none;
+}
+
+::placeholder {
+  color: #888888;
+  opacity: 1; /* Firefox */
+}
+
+.placetext{
+  color: 888888;
+}
+
+.normtext{
+  color: #CCCCCC;
+}
+
+.submit{
+  font-size: 15px;
+  font-family: Poppins;
+  background-color: #3f417566;
+  border-color: white;
+  border-style: dotted;
+  color: white;
+}
+
+.submit:hover{
+  border-style: dashed;
+}
+
+** end of undefined **
+

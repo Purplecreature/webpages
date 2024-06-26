@@ -1,6 +1,6 @@
 body{
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 2vw;
   background-image: url(https://c.wallhere.com/photos/b0/e9/alone_stars_purple_background-1964895.jpg!d);
   background-size: cover;
   background-attachment: fixed;
@@ -59,7 +59,7 @@ label{
 }
 
 input[type="text"],input[type="number"],input[type="email"],textarea, select{
-  font-size:25px;
+  font-size:2vw;
   width:50%;
   margin: auto;
   background-color: #3f417566;
@@ -91,7 +91,7 @@ select option[value=""]{
 textarea{
   width:80%;
   border: 2px dotted white;
-  font-size: 15px;
+  font-size: 4vw;
   margin-bottom: 15px;
 }
 
@@ -114,7 +114,7 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="email"]:focus,te
 }
 
 .submit{
-  font-size: 20px;
+  font-size: 3vw;
   padding: 7px;
   margin-left: auto;
   margin-top: 15px;
@@ -123,7 +123,7 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="email"]:focus,te
   background-color: #3f417566;
   border-color: white;
   border-style: dotted;
-  color: white;
+  color: #CCCCCC;
 }
 
 .submit:hover{
